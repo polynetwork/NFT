@@ -6,32 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "symbol",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_lowerLimit",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_upperLimit",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -86,81 +60,6 @@
 				"inputs": [
 					{
 						"indexed": true,
-						"internalType": "bytes32",
-						"name": "role",
-						"type": "bytes32"
-					},
-					{
-						"indexed": true,
-						"internalType": "bytes32",
-						"name": "previousAdminRole",
-						"type": "bytes32"
-					},
-					{
-						"indexed": true,
-						"internalType": "bytes32",
-						"name": "newAdminRole",
-						"type": "bytes32"
-					}
-				],
-				"name": "RoleAdminChanged",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "bytes32",
-						"name": "role",
-						"type": "bytes32"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "sender",
-						"type": "address"
-					}
-				],
-				"name": "RoleGranted",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "bytes32",
-						"name": "role",
-						"type": "bytes32"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "sender",
-						"type": "address"
-					}
-				],
-				"name": "RoleRevoked",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
 						"internalType": "address",
 						"name": "from",
 						"type": "address"
@@ -180,32 +79,6 @@
 				],
 				"name": "Transfer",
 				"type": "event"
-			},
-			{
-				"inputs": [],
-				"name": "DEFAULT_ADMIN_ROLE",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "MINTER_ROLE",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			},
 			{
 				"inputs": [
@@ -247,34 +120,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "uri",
-						"type": "string"
-					},
-					{
-						"internalType": "bytes",
-						"name": "signature",
-						"type": "bytes"
-					}
-				],
-				"name": "claim",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
 						"name": "tokenId",
 						"type": "uint256"
@@ -286,67 +131,6 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "role",
-						"type": "bytes32"
-					}
-				],
-				"name": "getRoleAdmin",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "role",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "grantRole",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "role",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "hasRole",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -374,42 +158,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "lowerLimit",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "uri",
-						"type": "string"
-					}
-				],
-				"name": "mintWithURI",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -442,42 +190,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "role",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "renounceRole",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "role",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "revokeRole",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -545,24 +257,6 @@
 					}
 				],
 				"name": "setApprovalForAll",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_lowerLimit",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_upperLimit",
-						"type": "uint256"
-					}
-				],
-				"name": "setClaimRange",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -696,22 +390,10 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "upperLimit",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
+			"details": "This implements an optional extension of {ERC721} defined in the EIP that adds enumerability of all the token ids in the contract as well as all token ids owned by each account.",
 			"kind": "dev",
 			"methods": {
 				"approve(address,uint256)": {
@@ -723,15 +405,6 @@
 				"getApproved(uint256)": {
 					"details": "See {IERC721-getApproved}."
 				},
-				"getRoleAdmin(bytes32)": {
-					"details": "Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}."
-				},
-				"grantRole(bytes32,address)": {
-					"details": "Grants `role` to `account`. If `account` had not been already granted `role`, emits a {RoleGranted} event. Requirements: - the caller must have ``role``'s admin role."
-				},
-				"hasRole(bytes32,address)": {
-					"details": "Returns `true` if `account` has been granted `role`."
-				},
 				"isApprovedForAll(address,address)": {
 					"details": "See {IERC721-isApprovedForAll}."
 				},
@@ -741,12 +414,6 @@
 				"ownerOf(uint256)": {
 					"details": "See {IERC721-ownerOf}."
 				},
-				"renounceRole(bytes32,address)": {
-					"details": "Revokes `role` from the calling account. Roles are often managed via {grantRole} and {revokeRole}: this function's purpose is to provide a mechanism for accounts to lose their privileges if they are compromised (such as when a trusted device is misplaced). If the calling account had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must be `account`."
-				},
-				"revokeRole(bytes32,address)": {
-					"details": "Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role."
-				},
 				"safeTransferFrom(address,address,uint256)": {
 					"details": "See {IERC721-safeTransferFrom}."
 				},
@@ -755,6 +422,9 @@
 				},
 				"setApprovalForAll(address,bool)": {
 					"details": "See {IERC721-setApprovalForAll}."
+				},
+				"supportsInterface(bytes4)": {
+					"details": "See {IERC165-supportsInterface}."
 				},
 				"symbol()": {
 					"details": "See {IERC721Metadata-symbol}."
@@ -785,7 +455,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"KSlashh/NFT/contracts/core/NFT.sol": "ERC721MintWithSig"
+			"KSlashh/NFT/contracts/libs/token/ERC721/extensions/ERC721Enumerable.sol": "ERC721Enumerable"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -799,22 +469,6 @@
 		"remappings": []
 	},
 	"sources": {
-		"KSlashh/NFT/contracts/core/NFT.sol": {
-			"keccak256": "0xbb2d0a48cf852def5a2f6bf4c68a1f17eb49dc9bae7d4016955efaec04970cad",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://3cc94d8f4721a92c91395a6acb9b8eaaa102affba4baf01b278c28909dd31da9",
-				"dweb:/ipfs/QmcWCqWWrL3zPhk2qw5k1Ds2R2tLGtm7n3a62MKkY63E98"
-			]
-		},
-		"KSlashh/NFT/contracts/libs/access/AccessControl.sol": {
-			"keccak256": "0x98fac37221212c8f126f198d262a4df86394bd1a9969f61e40739fe8ac013dd8",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://62f98a3c51ff54e1d19c8845da55415c85b4f28c81c0c3b1361eb6eaa905a0c6",
-				"dweb:/ipfs/QmTZxiScs2HXZRtscWGjBBXmG4qeFGk1Bq8FGzhbWi1wr3"
-			]
-		},
 		"KSlashh/NFT/contracts/libs/token/ERC721/ERC721.sol": {
 			"keccak256": "0x2d9f9af8b84d252e0e7ee716e4cb3ad1b58f3ec6619e4f54f40d4b5e28f75eb7",
 			"license": "MIT",
@@ -845,14 +499,6 @@
 			"urls": [
 				"bzz-raw://ba34b5028b6a297467a7364d9af182649dee0611a0f9620ec27ce10647885cad",
 				"dweb:/ipfs/QmWhGtHDcAYWA31f3Ze9izeh3SPMRzcFagTUwxExLg3sRc"
-			]
-		},
-		"KSlashh/NFT/contracts/libs/token/ERC721/extensions/ERC721URIStorage.sol": {
-			"keccak256": "0xd03f5c3d258a9b0f751a3246e0802106585561ab5909b808368759364fc786f8",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://e89e3562a13d6acd5c6c0ce1c657f1ea1b472878c30a2f88528e721f2d3b4117",
-				"dweb:/ipfs/QmToL4MkNtn4BFipo6neazAsXwpcUxxhBBCkA6yVSLUAe9"
 			]
 		},
 		"KSlashh/NFT/contracts/libs/token/ERC721/extensions/IERC721Enumerable.sol": {
@@ -893,14 +539,6 @@
 			"urls": [
 				"bzz-raw://1123c9545decc48a011370ebab4bf53dda98524fa21f9498e68851ba8f0ffc0f",
 				"dweb:/ipfs/QmUpgMg8EFDnv87ePKUjXxXpJT3qwHRj9VDNSnRxu7T9sy"
-			]
-		},
-		"KSlashh/NFT/contracts/libs/utils/cryptography/ECDSA.sol": {
-			"keccak256": "0xf3fa537d1470fd79adb7dd0cf0fc156e8aeb9771db5138064664df38fc7bf14d",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://9a375e269dea7ac4b690be4ac3a1af08ffe81f58fcf00fedfef67dc16dd51c6c",
-				"dweb:/ipfs/QmPtzBHRnQ4cUmHFpXEbvSkXt17Fmc7fgYjzUWCwGAmZ4k"
 			]
 		},
 		"KSlashh/NFT/contracts/libs/utils/introspection/ERC165.sol": {
